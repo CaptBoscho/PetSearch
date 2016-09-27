@@ -1,8 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Kavoon';
 
+@import 'https://fonts.googleapis.com/css?family=Concert+One';
+@import 'https://fonts.googleapis.com/css?family=Ewert';
+
 h1 {
   text-align: center;
   color: sienna;
+	font-family: 'Ewert', cursive;
 }
 
 body {
@@ -64,11 +68,19 @@ div {
 }
 #photos li img
 {
-	max-height: 300px;
+	transition:height 0.5s ease;
+	max-height: 350px;
+	height: 250px;
+}
+
+#photos li img:hover
+{
+	height :325px;
+	transition:height 0.5s ease;
 }
 
 #photos p
 {
-	font-size:18px;
-	font-family: 'Kavoon', cursive;
+	font-size:24px;
+	font-family: 'Concert One', cursive;
 }
