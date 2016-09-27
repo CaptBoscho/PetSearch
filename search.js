@@ -29,6 +29,9 @@ function searchA() {
     var size = response['items'].length;
     console.log("size: " + size);
     var random = Math.floor((Math.random() * size) + 1);
+    if(!response['items'][random].hasOwnProperty('id')){
+	random = 0;
+     }
     var id = response['items'][random]['id']['videoId'];
     var videoURL = "https://www.youtube.com/embed/" + id;
     console.log(videoURL);
