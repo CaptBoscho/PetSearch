@@ -38,10 +38,12 @@ function searchA() {
 
 	var petURL = "http://api.petfinder.com/";
 	var method2 = "pet.getRandom";
+	var argumentG = "&sex=" + $('#gender').val();
 	var argument = "animal=" + $('#query').val().toLowerCase();
 	var argument2 = "output=basic";
 
-	var fullURL = petURL + method2 + "?key=" + key + "&" + argument2 + "&"+argument+ "&format=json";
+	var fullURL = petURL + method2 + "?key=" + key + "&" + argument2 + "&"+argument+
+			argumentG + "&format=json";
 	console.log(fullURL);	
 
 
