@@ -14,7 +14,7 @@ $("#search-button").click(function(e) {
 });
 
 function searchA() {
-  var q = "cute pet " + $('#query').val();
+  var q = "cute " + $('#query').val();
   console.log(q);
   console.log(gapi);
   var request = gapi.client.youtube.search.list({
@@ -24,9 +24,12 @@ function searchA() {
   console.log(q);
   request.execute(function(response) {
     var str = JSON.stringify(response.result);
-    // console.log(str);
+    console.log("here");
     $('#search-container').html('<pre>' + str + '</pre>');
-    var id = response['items']['0']['id']['videoId'];
+    var size = response['items'].length;
+    console.log("size: " + size);
+    var random = Math.floor((Math.random() * size) + 1);
+    var id = response['items'][random]['id']['videoId'];
     var videoURL = "https://www.youtube.com/embed/" + id;
     console.log(videoURL);
     $('#youtubeVideo').attr('src',videoURL);;
