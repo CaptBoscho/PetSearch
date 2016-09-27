@@ -96,7 +96,7 @@ function searchA() {
 			var count = 0;
 			var media;
 			greeting = greeting.replace("undefined","");
-			list = greeting + "<br>";
+			list = "<p>" + greeting+ "</p>" + "<br>";
 					
 	
 			if(data.petfinder.pet.media.hasOwnProperty("photos") &&
