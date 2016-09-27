@@ -1,6 +1,10 @@
 h1 {
   text-align: center;
-  color: saddlebrown;
+  color: sienna;
+}
+
+body {
+  background-color: sandybrown;
 }
 
 #input {
