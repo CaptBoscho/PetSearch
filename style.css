@@ -4,7 +4,7 @@ h1 {
 }
 
 body {
- background-color: tan;
+ background-color: #99FFFF;
 }
 
 #input {
@@ -40,4 +40,18 @@ div {
         border-color: black;
 }
 
+#photos ul
+{
+	list-style-type: none;
+	display:block;
+	margin: auto;
+
+}
+
+#photos li
+{
+	display: inline-block;
+	margin: 0 auto;
+
+}
 
