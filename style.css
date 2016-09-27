@@ -4,7 +4,8 @@ h1 {
 }
 
 body {
- background-color: #ffebcd;
+ background-color: #deb887;
+ height: 100%;
 }
 
 #input {
@@ -20,8 +21,13 @@ div {
   text-align: center;
 }
 
+#petfinder {
+  height: 350px;
+}
+
 #video {
   text-align: center;
+  height: 400px;
 }
 
 #searchDiv {
@@ -34,7 +40,7 @@ div {
 
 .panel-body
 {
-        background-color: white;
+        background-color: #ffebcd;
         border-style: solid;
         border-width: 2px;
         border-color: black;
