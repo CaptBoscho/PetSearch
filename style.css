@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Kavoon';
+
 h1 {
   text-align: center;
   color: sienna;
@@ -65,3 +67,7 @@ div {
 	max-height: 300px;
 }
 
+#photos p
+{
+	font-family: 'Kavoon', cursive;
+}
