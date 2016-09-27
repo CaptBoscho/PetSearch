@@ -14,7 +14,7 @@ $("#search-button").click(function(e) {
 });
 
 function searchA() {
-  var q = $('#query').val();
+  var q = "cute pet " + $('#query').val();
   console.log(q);
   console.log(gapi);
   var request = gapi.client.youtube.search.list({

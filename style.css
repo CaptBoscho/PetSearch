@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  color: saddlebrown;
+}
+
+#input {
+  text-align: center;
+ 
+}
+
+#randomDiv {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+#video {
+  text-align: center;
+}
+
+#searchDiv {
+  text-align: center;
+}
+
+#bordered {
+  text-align: center;  
+}
+
+.panel-body
+{
+        background-color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+}
+
+

@@ -1,14 +1,51 @@
-<!doctype html>
 <html>
   <head>
-    <title>Pet Search</title>
+    <title>Local Pet Search</title>
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <h1>Search a Pet</h1>
-    <div id="buttons">
-      <label> <input id="query" value='cats' type="text"/><button id="search-button"  >Search</button></label>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div id='bordered'>
+    <div id="randomDiv">
+       <button id="random">Random Search</button>
     </div>
+    <br>
+    <div id = "input">
+    <label>Animal: </label>
+    <select name="Animal" id='query'>
+	<option value="dog">Dog</option>
+	<option value="cat">Cat</option>
+	<option value="reptile">Lizard</option>
+	<option value="barnyard">Barnyard</option>
+	<option value="bird">Bird</option>
+	<option value="horse">Horse</option>
+	<option value="pig">Pig</option>
+	<option value="smallfurry">Small Furry</option>
+    </select>
+    <label>Gender: </label>
+    <select name="Gender" id='gender'>
+	<option value="M">M</option>
+	<option value="F">F</option>
+    </select>
+    </div>
+    <br>
+    <div id='searchDiv'>
+      <button id="search-button"  >Search</button></label>
+    </div>
+    </div>
+  </div>
+</div>
+    <br>
+    <div id='petFinder'>
+	Add Petsearch stuff here
+    </div>
+    <br>
     <div id="video">
 	<iframe width="420" height="315" id="youtubeVideo"
 	src="https://www.youtube.com/embed/QZLq9hs_cqc">
